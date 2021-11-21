@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Montserrat;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   font-size: 15px;
+}
+
+/* header start */
+.header {
+   position: sticky;
+   z-index: 1;
+   top: 0px;
+   background-color: white;
+   height: 60px;
+   /* border-bottom: 1px solid #ccc; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   box-shadow: 0px 2px 4px 1px rgba(168, 165, 165, 0.3);
+   -webkit-box-shadow: 0px 2px 4px 1px rgba(168, 165, 165, 0.3);
+   -moz-box-shadow: 0px 2px 4px 1px rgba(168, 165, 165, 0.3);
+}
+/* .left,
+.middle,
+.right {
+   border: 1px solid red;
+} */
+.left {
+   width: 12%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   padding: 10px;
+}
+.left .logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 22px;
+}
+.left .logo span {
+   margin-left: 3px;
+   font-size: 25px;
+   font-family: 'Cuprum', sans-serif;
+   font-weight: 700;
+}
+.fa-youtube {
+   font-size: 30px;
+   color: red;
+}
+.middle {
+   width: 40%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+.middle input {
+   border: 1px solid #ccc;
+   width: 80%;
+   height: 100%;
+   padding: 5px 15px;
+   font-size: 15px;
+   font-weight: 500;
+   outline: none;
+   border-radius: 0;
+}
+.middle .buttons-group {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   width: 20%;
+}
+.middle .buttons-group button {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   outline: none;
+}
+.search {
+   width: 50%;
+   border: 1px solid #ccc;
+   border-radius: 0;
+}
+.microphone {
+   border: 1px solid black;
+   border-radius: 50%;
+   width: 45px;
+   background-color: rgba(204, 204, 204, 0.123);
+}
+.right {
+   width: 15%;
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.right button {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   border: 2px solid blue;
+   background-color: transparent;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 15px;
+   color: blue;
+}
+/* header end */
+
+.main {
+   display: flex;
+}
+
+/* sidebar start */
+.sidebar {
+   position: fixed;
+   left: 0;
+   top: 60px;
+   width: 15%;
+   display: flex;
+   flex-direction: column;
+}
+.sidebar .upper,
+.lower,
+.bestofyoutube {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.upper,
+.lower,
+.bestofyoutube {
+   margin: 10px 0px;
+}
+hr {
+   border: 0.5px solid #ccc;
+}
+.upper button,
+.lower button,
+.bestofyoutube button {
+   display: flex;
+   align-items: center;
+   text-transform: capitalize;
+   font-weight: 500;
+   font-size: 15px;
+   text-align: left;
+   height: 40px;
+   padding: 25px 30px;
+   background-color: transparent;
+   outline: none;
+   border: none;
+}
+.upper span,
+.lower span,
+.bestofyoutube span {
+   margin-left: 15px;
+}
+.upper button:hover,
+.lower button:hover,
+.bestofyoutube button:hover {
+   background-color: rgba(204, 204, 204, 0.26);
+   color: red;
+}
+/* sidebar end */
+
+/* videos start */
+.container {
+   margin-left: calc(100% - 85%);
+   width: 85%;
+   background-color: rgba(215, 216, 218, 0.089);
+   display: grid;
+   padding: 20px;
+   grid-template-columns: repeat(4, 25%);
+   /* grid-gap: 20px 5px; */
+}
+.video {
+   height: 275px;
+   margin: 10px;
+}
+.thumbnail {
+   width: 100%;
+   height: 65%;
+   object-fit: cover;
+   margin: 0;
+   padding: 0;
+}
+.content {
+   margin-top: -3px;
+   width: 100%;
+   height: 35%;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.fa-free-code-camp {
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   font-size: 20px;
+   padding: 5px;
+}
+.info {
+   padding: 0px 10px;
+}
+/* videos end */
